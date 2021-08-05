@@ -8,8 +8,10 @@ This is the Express API to our Note app.
 4. Install dependencies with ```npm install```.
 
 ## `Important Links`
-- [Deployed API](https://hernandoit.github.io/)
-- [Deployed Client](https://hernandoit.github.io/)
+- [API Source Code](https://github.com/hernandoit/note)
+- [Deployed API](https://git.heroku.com/calm-taiga-11081.git)
+- [Deployed Client Source Code](https://github.com/hernandoit/note-client)
+- [Deployed Client](https://hernandoit.github.io/note-client/)
 
 ## `Planning Story`
 
@@ -65,4 +67,4 @@ This is the Express API to our Note app.
    2. Would like to eventually start a note without signing in, and save that note when registered
 
 ## `Images`
-[ERD](img/Note-ERD.svg)
+[ERD](img/Note-ERD.png)
