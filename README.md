@@ -12,6 +12,7 @@ This is the Express API to our Note app.
 - [Deployed Client](https://hernandoit.github.io/)
 
 ## `Planning Story`
+
 #### `Auth Specifications`
 
  - Signup with email, password, and password confirmation.
@@ -58,11 +59,10 @@ This is the Express API to our Note app.
 - Express
 - Heroku
 - MongoDB
-- AWS
 
 #### `Unsolved Problems`
    1. Would like to eventually have individual folders to have to notes in.
    2. Would like to eventually start a note without signing in, and save that note when registered
 
 ## `Images`
-[ERD](img/Note-ERD.png)
+[ERD](img/Note-ERD.svg)
