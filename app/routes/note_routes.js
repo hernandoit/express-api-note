@@ -4,7 +4,7 @@ const express = require('express')
 const passport = require('passport')
 
 // pull in Mongoose model for notes
-const note = require('../models/note')
+const Note = require('../models/note')
 
 // this is a collection of methods that help us detect situations when we need
 // to throw a custom error
@@ -30,7 +30,7 @@ const router = express.Router()
 // INDEX
 // GET /notes
 router.get('/notes', requireToken, (req, res, next) => {
-  note.find()
+  Note.find()
     .then(notes => {
       // `notes` will be an array of Mongoose documents
       // we want to convert each one to a POJO, so we use `.map` to
@@ -47,7 +47,7 @@ router.get('/notes', requireToken, (req, res, next) => {
 // GET /notes/5a7db6c74d55bc51bdf39793
 router.get('/notes/:id', requireToken, (req, res, next) => {
   // req.params.id will be set based on the `:id` in the route
-  note.findById(req.params.id)
+  Note.findById(req.params.id)
     .then(handle404)
     // if `findById` is successful, respond with 200 and "note" JSON
     .then(note => res.status(200).json({ note: note.toObject() }))
@@ -61,7 +61,7 @@ router.post('/notes', requireToken, (req, res, next) => {
   // set owner of new note to be current user
   req.body.note.owner = req.user.id
 
-  note.create(req.body.note)
+  Note.create(req.body.note)
     // respond to successful `create` with status 201 and JSON of new "note"
     .then(note => {
       res.status(201).json({ note: note.toObject() })
@@ -79,7 +79,7 @@ router.patch('/notes/:id', requireToken, removeBlanks, (req, res, next) => {
   // owner, prevent that by deleting that key/value pair
   delete req.body.note.owner
 
-  note.findById(req.params.id)
+  Note.findById(req.params.id)
     .then(handle404)
     .then(note => {
       // pass the `req` object and the Mongoose record to `requireOwnership`
@@ -98,7 +98,7 @@ router.patch('/notes/:id', requireToken, removeBlanks, (req, res, next) => {
 // DESTROY
 // DELETE /notes/5a7db6c74d55bc51bdf39793
 router.delete('/notes/:id', requireToken, (req, res, next) => {
-  note.findById(req.params.id)
+  Note.findById(req.params.id)
     .then(handle404)
     .then(note => {
       // throw an error if current user doesn't own `note`
