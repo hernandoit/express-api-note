@@ -2,7 +2,7 @@
 
 # TOKEN="425b95943f2417998848e2bdc5268345" sh curl-scripts/notes/index.sh 
 
-API="http://localhost:4741"
+API="https://calm-taiga-11081.herokuapp.com"
 URL_PATH="/notes"
 
 curl "${API}${URL_PATH}" \

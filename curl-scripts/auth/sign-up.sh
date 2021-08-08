@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # EMAIL="a@a.a" PASSWORD="a" PASSWORD="a" sh curl-scripts/auth/sign-up.sh
-API="http://localhost:4741"
+API="https://calm-taiga-11081.herokuapp.com"
 URL_PATH="/sign-up"
 
 curl "${API}${URL_PATH}" \
