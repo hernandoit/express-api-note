@@ -9,7 +9,7 @@ This is the Express API to our Note app.
 
 ## `Important Links`
 - [API Source Code](https://github.com/hernandoit/note)
-- [Deployed API](https://git.heroku.com/calm-taiga-11081.git)
+- [Deployed API](https://calm-taiga-11081.herokuapp.com)
 - [Deployed Client Source Code](https://github.com/hernandoit/note-client)
 - [Deployed Client](https://hernandoit.github.io/note-client/)
 
