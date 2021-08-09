@@ -8,8 +8,8 @@ This is the Express API to our Note app.
 4. Install dependencies with ```npm install```.
 
 ## `Important Links`
-- [API Source Code](https://github.com/hernandoit/note)
-- [Deployed API](https://calm-taiga-11081.herokuapp.com)
+- [API Source Code](https://github.com/hernandoit/express-api-note)
+- [Deployed API](https://warewolf-garden21210808.herokuapp.com)
 - [Deployed Client Source Code](https://github.com/hernandoit/note-client)
 - [Deployed Client](https://hernandoit.github.io/note-client/)
 
