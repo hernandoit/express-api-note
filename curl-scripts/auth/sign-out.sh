@@ -1,4 +1,4 @@
-# TOKEN=" " sh curl-scripts/auth/sign-out.sh
+# TOKEN="2401b16f69ea4d3d1c959c5e9afa65f0" sh curl-scripts/auth/sign-out.sh
 
 #!/bin/bash
 

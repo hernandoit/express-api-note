@@ -1,4 +1,4 @@
-# EMAIL="a@a.a" PASSWORD="a" sh curl-scripts/auth/sign-in.sh
+# EMAIL="a@a.info" PASSWORD="a" sh curl-scripts/auth/sign-in.sh
 
 #!/bin/bash
 

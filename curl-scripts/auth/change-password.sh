@@ -1,4 +1,4 @@
-# TOKEN=" " OLDPW="a" NEWPW="b" sh curl-scripts/auth/change-password.sh
+# TOKEN="0e409b11706c9125d5f9ec0e15da3832" OLDPW="a" NEWPW="b" sh curl-scripts/auth/change-password.sh
 
 #!/bin/bash
 
