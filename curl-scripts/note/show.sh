@@ -1,4 +1,4 @@
-# ID="61105a3dfb258c515074fafa" TOKEN="3dc465c52d3ec2964d7686ff5d9a37be" sh curl-scripts/note/show.sh 
+# ID="61105a3dfb258c515074fafa" TOKEN="" sh curl-scripts/note/show.sh 
 
 #!/bin/sh
 

@@ -1,4 +1,4 @@
-# TOKEN="3dc465c52d3ec2964d7686ff5d9a37be" TEXT="I really like sentences" TITLE="AMAZING SENTENCE" sh curl-scripts/note/create.sh 
+# TOKEN="e1fb23205fa51e4492aeb1062ebf78cd" TEXT="I really like sentences" TITLE="AMAZING SENTENCE" sh curl-scripts/note/create.sh 
 
 #!/bin/bash
 
@@ -11,7 +11,7 @@ curl "${API}${URL_PATH}" \
   --header "Content-Type: application/json" \
   --header "Authorization: Bearer ${TOKEN}" \
   --data '{
-    "example": {
+    "note": {
       "text": "'"${TEXT}"'",
       "title": "'"${TITLE}"'"
     }

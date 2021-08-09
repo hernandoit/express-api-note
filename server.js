@@ -60,7 +60,7 @@ app.use(noteRoutes)
 app.use(userRoutes)
 
 // register error handling middleware
-// note that this comes after the route middlewares, because it needs to be
+// note that this comes after the route middleware(s), because it needs to be
 // passed any error messages from them
 app.use(errorHandler)
 
