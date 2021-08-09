@@ -1,7 +1,8 @@
+# EMAIL="a@a.a" PASSWORD="a" sh curl-scripts/auth/sign-in.sh
+
 #!/bin/bash
 
-# EMAIL="a@a.a" PASSWORD="a" sh curl-scripts/auth/sign-in.sh
-API="https://calm-taiga-11081.herokuapp.com"
+API="http://localhost:4741"
 URL_PATH="/sign-in"
 
 curl "${API}${URL_PATH}" \

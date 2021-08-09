@@ -1,7 +1,8 @@
+# TOKEN=" " sh curl-scripts/auth/sign-out.sh
+
 #!/bin/bash
 
-# TOKEN="2649dbf03897fe8de4935b1f710065d9" sh curl-scripts/auth/sign-out.sh
-API="https://calm-taiga-11081.herokuapp.com"
+API="http://localhost:4741"
 URL_PATH="/sign-out"
 
 curl "${API}${URL_PATH}/" \

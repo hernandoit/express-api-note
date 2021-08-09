@@ -1,8 +1,8 @@
+# TOKEN="3dc465c52d3ec2964d7686ff5d9a37be" TEXT="I really like sentences" TITLE="AMAZING SENTENCE" sh curl-scripts/note/create.sh 
+
 #!/bin/bash
 
-# TOKEN="425b95943f2417998848e2bdc5268345" TEXT="NOTE" TITLE="AMAZING" sh curl-scripts/notes/create.sh 
-
-API="https://calm-taiga-11081.herokuapp.com"
+API="http://localhost:4741"
 URL_PATH="/notes"
 
 curl "${API}${URL_PATH}" \
@@ -11,7 +11,7 @@ curl "${API}${URL_PATH}" \
   --header "Content-Type: application/json" \
   --header "Authorization: Bearer ${TOKEN}" \
   --data '{
-    "note": {
+    "example": {
       "text": "'"${TEXT}"'",
       "title": "'"${TITLE}"'"
     }
